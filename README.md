@@ -1,4 +1,5 @@
 # Custom Neovim Setup
+You can just clone this repository in your `~/.config` directory after you installed all the dependencies and it should work just fine. 
 # Requirements
 Note: Some dependences may miss. Since the list of plugins used is provided you can go check the dependeces for every plugin individually.
 
@@ -24,6 +25,7 @@ If you add a file into `/lua/config` directory remember to require it into `init
 - [Vimtex](https://github.com/lervag/vimtex)
 
 # Lsp 
+If you want to use Lsps you have to install them trough Mason once the setup is operative
 [Here](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md) you can find all the avaiable lsp configs.
 - [bashls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#bashls)
 - [cssls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#cssls)
@@ -49,3 +51,12 @@ If you installed Neovim by building it from source you can erase it from you sys
 - [LSP Setup](https://vonheikemen.github.io/learn-nvim/feature/lsp-setup.html)
 - [Lua-guide](https://neovim.io/doc/user/lua-guide.html)
 - [TJ DeVries](https://www.youtube.com/@teej_dv) is one of the Neovim developer, you might find something usefull on his YouTube channel.
+
+# Summary of commands
+- Installing Neovim:  
+`sudo apt update && sudo apt-get install ninja-build gettext cmake unzip curl npm && git clone https://github.com/neovim/neovim && cd neovim && git checkout stable && make CMAKE_BUILD_TYPE=RelWithDebInfo && cd build && cpack -G DEB && sudo dpkg -i nvim-linux-x86_64.deb`
+
+
+
+
+
