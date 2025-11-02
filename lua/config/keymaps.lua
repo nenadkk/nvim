@@ -1,4 +1,5 @@
-vim.g.mapleader = " "
+--IL mapleader viene settato in init.lua per evitare problemi con lazy
+-- vim.g.mapleader = " "
 
 vim.keymap.set("i", "jj", '<esc>')
 vim.keymap.set("n", "<C-s>",":w<enter>")
