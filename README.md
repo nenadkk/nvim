@@ -8,8 +8,7 @@ Note: Some dependences may miss. Since the list of plugins used is provided you 
 - `npm` (needed by Mason plugin)
 - `git`
 - `tree-sitter-cli` version > 0.20.8
-- if you use `vimtex`, you would need `latexmk` and `texlive` to compile it (also make sure to have the language packege installed).
-
+- if you use `vimtex` you would need to install the `zathura` package. To compile the .tex file you would need an external compiler like `texlive` (if you use some package language, make sure to install them also)
 # Config
 If you add a file into `/lua/config` directory remember to require it into `init.lua`.
 
