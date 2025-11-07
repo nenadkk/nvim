@@ -7,6 +7,8 @@ Note: Some dependences may miss. Since the list of plugins used is provided you 
 - It is suggested to use the last version of Neovim. Since this setup is based on Neovim 11.4 in the case you have an older version you might get some problems. See [Building Neovim from Source](https://github.com/neovim/neovim/wiki/Building-Neovim/688be28f98c18e73b5043879b5963287a9b13d6c). Make sure to have installed the [Build prerequisites](https://github.com/neovim/neovim/wiki/Building-Neovim/688be28f98c18e73b5043879b5963287a9b13d6c#build-prerequisites).
 - `npm` (needed by Mason plugin)
 - `git`
+- `tree-sitter-cli` version > 0.20.8
+- if you use `vimtex`, you would need `latexmk` and `texlive` to compile it (also make sure to have the language packege installed).
 
 # Config
 If you add a file into `/lua/config` directory remember to require it into `init.lua`.
