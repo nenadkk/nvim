@@ -23,4 +23,3 @@ vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
 vim.opt.foldlevel = 99
 vim.opt.foldenable = false
 
---vim.cmd.colorscheme("onedark")
