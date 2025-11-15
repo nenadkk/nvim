@@ -21,7 +21,6 @@ vim.opt.cursorline = true
 vim.wo.foldmethod = 'expr'
 vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
 vim.opt.foldlevel = 99
-vim.opt.foldlevelstart = 2
 vim.opt.foldenable = false
 
 --vim.cmd.colorscheme("onedark")
