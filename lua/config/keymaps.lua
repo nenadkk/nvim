@@ -46,6 +46,7 @@ vim.keymap.set("v", "?", "y q/p<enter>")
 vim.keymap.set("n", "<leader>no", ":noh<enter>")
 
 
+vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", {})
 
 
 
