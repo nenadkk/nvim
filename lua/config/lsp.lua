@@ -27,7 +27,9 @@ vim.lsp.enable('lua_ls')
 vim.lsp.config('lua_ls',{
     cmd = {'lua-language-server'},
     filetypes = {'lua'},
-    root_markers = { ".luarc.json", ".luarc.jsonc", ".luacheckrc", ".stylua.toml", "stylua.toml", "selene.toml", "selene.yml", ".git" },
+    root_markers = { ".luarc.json", ".luarc.jsonc", ".luacheckrc",
+                     ".stylua.toml", "stylua.toml", "selene.toml",
+                     "selene.yml", ".git" },
     settings = {
         Lua = {
             runtime = {version = 'LuaJIT'},
@@ -71,15 +73,9 @@ vim.lsp.config('cssls',{
     },
     root_markers = { "package.json", ".git" },
     settings = {
-        css = {
-            validate = true
-        },
-        less = {
-            validate = true
-        },
-        scss = {
-            validate = true
-        }
+        css = { validate = true },
+        less = { validate = true },
+        scss = { validate = true }
     }
 })
 
@@ -89,7 +85,8 @@ vim.lsp.config('cssls',{
 vim.lsp.enable('ts_ls')
 vim.lsp.config('ts_ls',{
     cmd = { "typescript-language-server", "--stdio" },
-    filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx", "js" },
+    filetypes = { "javascript", "javascriptreact", "javascript.jsx",
+                    "typescript", "typescriptreact", "typescript.tsx", "js" },
     init_options = {
         hostInfo = "neovim"
     }
@@ -104,6 +101,24 @@ vim.lsp.config('phpactor',{
     filetypes = { "php" },
     root_markers = { ".git", "composer.json", ".phpactor.json", ".phpactor.yml" },
     workspace_required = true,
+
+})
+
+vim.lsp.enable('clangd')
+vim.lsp.config('clangd',{
+    cmd = { "clangd" },
+    filetypes = { "c", "cpp", "objc", "objcpp", "cuda" } ,
+    root_markers = { ".clangd", ".clang-tidy", ".clang-format",
+                    "compile_commands.json", "compile_flags.txt",
+                    "configure.ac", ".git" },
+    capabilities = {
+        offsetEncoding = { "utf-8", "utf-16" },
+        textDocument = {
+            completion = {
+                editsNearCursor = true
+            }
+        }
+    },
 
 })
 
